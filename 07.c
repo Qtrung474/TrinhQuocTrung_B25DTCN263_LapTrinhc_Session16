@@ -1,17 +1,17 @@
 #include <stdio.h>
 
 int main() {
-    char text[] = "nguyenvana@gmail.com";
+    char str[] = "nguyenvana@gmail.com";
     int chuCai = 0;
     int chuSo = 0;
     int kyTuDacBiet = 0;
     int i; 
-    for (i = 0; text[i] != '\0'; i++) {
+    for (i = 0; str[i] != '\0'; i++) {
         
-        if ((text[i] >= 'a' && text[i] <= 'z') || (text[i] >= 'A' && text[i] <= 'Z')) {
+        if ((str[i] >= 'a' && str[i] <= 'z') || (str[i] >= 'A' && str[i] <= 'Z')) {
             chuCai++;
         }
-        else if (text[i] >= '0' && text[i] <= '9') {
+        else if (str[i] >= '0' && str[i] <= '9') {
             chuSo++;
         }
         else {
