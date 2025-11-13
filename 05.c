@@ -9,7 +9,7 @@ int main() {
     printf("Nhap vao mot chuoi: ");
     fgets(str, sizeof(str), stdin);
     str[strcspn(str, "\n")] = '\0';
-    for (i = 0;str[i] != '\0'; i++) {
+    for (i = 0; str[i] != '\0'; i++) {
         if (str[i] == ' ') {
             inWord = 0; 
         }
@@ -22,4 +22,5 @@ int main() {
 
     return 0;
 }
+
 
